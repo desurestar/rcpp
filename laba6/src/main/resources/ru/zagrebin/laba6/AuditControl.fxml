@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:id="auditControl">
+    <top>
+        <Label fx:id="label1" text="Список изменений" style="-fx-font-size: 14pt; -fx-font-family: 'Segoe UI'; -fx-padding: 10;" />
+    </top>
+    <center>
+        <TableView fx:id="dataGridView" />
+    </center>
+</BorderPane>

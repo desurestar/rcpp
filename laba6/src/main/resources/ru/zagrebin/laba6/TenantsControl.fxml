@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:id="tenantsControl">
+    <top>
+        <Label fx:id="label1" text="Список арендаторов" style="-fx-font-size: 14pt; -fx-font-family: 'Segoe UI'; -fx-padding: 10;" />
+    </top>
+    <center>
+        <TableView fx:id="dataGridView" />
+    </center>
+    <bottom>
+        <HBox fx:id="panel2" spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+            <Button fx:id="btnAddTenant" text="Добавить арендатора" prefWidth="200" onAction="#handleAddTenant" />
+            <Button fx:id="btnEditTenant" text="Редактировать" prefWidth="200" onAction="#handleEditTenant" />
+            <Button fx:id="btnDeleteTenant" text="Удалить" prefWidth="200" onAction="#handleDeleteTenant" />
+        </HBox>
+    </bottom>
+</BorderPane>

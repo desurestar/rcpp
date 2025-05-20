@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ru.zagrebin.laba5.AddNewStudentController"
+            prefWidth="500" prefHeight="400">
+
+    <center>
+        <GridPane hgap="10" vgap="10">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label text="Имя:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="firstNameField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Фамилия:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="lastNameField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Отчество:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="middleNameField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Группа:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="groupField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Кафедра:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="departmentField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+            <Label text="Дата рождения:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="birthDateField" promptText="ГГГГ-ММ-ДД" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+            <Label text="Город:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <TextField fx:id="cityField" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+        </GridPane>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Сохранить" onAction="#onSave"/>
+            <Button text="Отмена" onAction="#onCancel"/>
+        </HBox>
+    </bottom>
+</BorderPane>
